@@ -1,0 +1,26 @@
+{
+  "name": "react-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server --watch db.json --port 5000",
+    "client": "npm start --prefix mati-blog",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matiasruiz21/react-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matiasruiz21/react-blog/issues"
+  },
+  "homepage": "https://github.com/matiasruiz21/react-blog#readme",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "json-server": "^0.16.3"
+  }
+}
