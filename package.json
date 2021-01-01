@@ -21,6 +21,7 @@
   "homepage": "https://github.com/matiasruiz21/react-blog#readme",
   "dependencies": {
     "concurrently": "^5.3.0",
-    "json-server": "^0.16.3"
+    "json-server": "^0.16.3",
+    "react-router-dom": "^5.2.0"
   }
 }
