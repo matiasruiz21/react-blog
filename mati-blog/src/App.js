@@ -1,10 +1,10 @@
-import "./App.css";
-import NavBar from "./NavBar";
-import Home from "./Home";
+import "./css/App.css";
+import NavBar from "./components/NavBar";
+import Home from "./components/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Create from "./Create";
-import BlogDetails from "./BlogDetails";
-import NotFound from "./NotFound"
+import Create from "./components/Create";
+import BlogDetails from "./components/BlogDetails";
+import NotFound from "./components/NotFound"
 
 function App() {
   return (
