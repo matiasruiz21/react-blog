@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+// Hook re completo pa
 const useFetch = (url) => {
   const [data, setData] = useState(null);
   const [isPending, setIsPending] = useState(true);
