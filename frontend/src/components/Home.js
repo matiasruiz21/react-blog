@@ -4,7 +4,7 @@ import useFetch from "../hooks/useFetch";
 const Home = () => {
   
   const { error, isPending, data: blogs } = useFetch(
-    "http://localhost:5000/blogs"
+    "http://localhost:1337/blogs"
   );
 
   return (
