@@ -1,7 +1,7 @@
 {
   "root": true,
   "project": {
-    "name": "react-blog"
+    "name": "react-sanity"
   },
   "api": {
     "projectId": "j3t21mnr",
