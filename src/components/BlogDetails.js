@@ -14,7 +14,19 @@ const BlogDetails = () => {
     }).then(() => {
       history.push("/");
     });
+    // projectFirestore
+    //   .collection("Blogs")
+    //   .doc(id)
+    //   .delete()
+    //   .then(() => {
+    //     history.push("/");
+    //   })
+    //   .catch((error) => {
+    //     console.error("Error removing document: ", error);
+    //   });
   };
+
+  // const { docs: blogs, isPending, error } = useFsdoc("Blogs", id);
 
   return (
     <div className="blog-details">

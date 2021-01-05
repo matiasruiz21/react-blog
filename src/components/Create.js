@@ -5,7 +5,11 @@ const Create = () => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const [author, setAuthor] = useState("");
+
   const history = useHistory();
+
+  var today = new Date();
+  today.setHours(0, 0, 0, 0);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -18,6 +22,22 @@ const Create = () => {
     }).then(() => {
       history.push("/");
     });
+
+    // Add a new document with a generated id.
+    // projectFirestore
+    //   .collection("Blogs")
+    //   .add({
+    //     title: mytitle,
+    //     author: myauthor,
+    //     body: mybody,
+    //     createdAt: today,
+    //   })
+    //   .then(() => {
+    //     history.push("/");
+    //   })
+    //   .catch(function (error) {
+    //     console.error("Error adding document: ", error);
+    //   });
   };
 
   return (
