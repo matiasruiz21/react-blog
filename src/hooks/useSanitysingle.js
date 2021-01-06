@@ -22,7 +22,6 @@ const useSanitysingle = (slug) => {
         setIsPending(false);
         setData(docs[0]);
         setError(null);
-        console.log(docs[0]);
       })
       .catch((err) => {
         if (err.name === "AbortError") {
