@@ -1,10 +1,8 @@
+import useSanity from "../hooks/useSanity";
 import BlogList from "./BlogList";
-import useFetch from "../hooks/useFetch";
 
 const Home = () => {
-  const { error, isPending, data: blogs } = useFetch(
-    "http://localhost:1337/blogs"
-  );
+  const { error, isPending, data: blogs } = useSanity("blog");
 
   //const { docs: blogs, isPending, error } = useFirestore("Blogs");
 
